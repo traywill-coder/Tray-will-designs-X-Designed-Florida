@@ -471,3 +471,23 @@ body {
   background-image: radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
   background-size: 20px 20px;
 }
+@media (max-width: 600px) {
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    margin-bottom: 4px;
+  }
+
+  .hero h1 {
+    margin-top: 6px;
+  }
+}
+
