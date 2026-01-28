@@ -93,7 +93,7 @@ body {
 }
 
 .logo {
-  max-width: 500px;
+  max-width: 1000px;
   margin-bottom: 6px;
 }
 
@@ -490,5 +490,6 @@ body {
     margin-top: 6px;
   }
 }
+
 
 
