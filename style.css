@@ -1,0 +1,473 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --text-dark: #1a1a1a;
+  --text-muted: #666;
+}
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.hero h1 {
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.4px;
+}
+.card h3 {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  letter-spacing: 0.3px;
+}
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 28px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(106, 0, 255, 0.496),   /* purple */
+      rgba(255, 77, 110, 0.566),  /* pink */
+      rgba(255, 160, 28, 0.515)   /* orange */
+    ),
+    url("hero-bg.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(103, 0, 200, 0.601);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 10px;
+  color: #fff;
+  max-width: 900px;
+}
+
+.logo {
+  max-width: 260px;
+  margin-bottom: 6px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 14px 36px;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.7);
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border: none;
+  padding: 38px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* BOOKING */
+.booking {
+  background: #f7f9fb;
+  text-align: center;
+}
+
+/* FAQ */
+.faq details {
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+}
+
+/* FLOATING BUTTONS */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.float-btn {
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+.float-btn:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp { background: #25D366; }
+.instagram { background: #C13584; }
+/* CONTACT SECTION (Start a Project) */
+.contact {
+  text-align: center;
+}
+
+.section-lead {
+  max-width: 760px;
+  margin: 0 auto 22px;
+  color: rgba(0,0,0,0.7);
+  font-size: 1.05rem;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* “Pill” buttons */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;       /* removes underline */
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  background: #111;
+  color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+.pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+/* Optional: WhatsApp brand */
+.pill.whatsapp {
+  background: #25D366;
+  color: #0b2b16;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+}
+/* SUBTLE ENTRANCE ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content {
+  animation: fadeUp 700ms ease both;
+}
+
+.card, .shot, .step, .pill {
+  animation: fadeUp 700ms ease both;
+}
+
+/* Stagger effect (makes it feel premium) */
+.card:nth-child(1) { animation-delay: 80ms; }
+.card:nth-child(2) { animation-delay: 140ms; }
+.card:nth-child(3) { animation-delay: 200ms; }
+.card:nth-child(4) { animation-delay: 260ms; }
+.card:nth-child(5) { animation-delay: 320ms; }
+
+/* Respect accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .hero-content, .card, .shot, .step, .pill {
+    animation: none !important;
+  }
+}
+.process {
+  text-align: center;
+}
+/* Remove bullets and numbers from process list */
+.process ol {
+  list-style: none;
+  padding: 0;
+  margin: 40px auto 0;
+}
+.process ol,
+.process ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.process li::marker {
+  content: "";
+}
+.process li {
+  margin-bottom: 28px;
+}
+.process h3 {
+  margin-bottom: 6px;
+}
+
+.process p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* Subtle dividers between process steps */
+.process li {
+  position: relative;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+
+.process li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0,0,0,0.15),
+    transparent
+  );
+}
+body {
+  background-color: #f7f7f9;
+  background-image:
+    radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+section {
+  position: relative;
+  z-index: 1;
+}
+/* 1) Gradient dividers between major sections */
+section:not(.hero) {
+  position: relative;
+}
+
+section:not(.hero)::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: min(900px, 90%);
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0,0,0,0.12),
+    transparent
+  );
+}
+/* 2) Glassmorphism cards */
+.card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0,0,0,0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+/* 3) Pricing section styles (ready for when you add it) */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.price-card {
+  border-radius: 22px;
+  padding: 28px;
+  background: rgba(255,255,255,0.78);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.price-card h3 {
+  margin: 0 0 8px;
+}
+
+.price {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 0 10px;
+}
+/* 4) Mobile spacing fine-tuning */
+@media (max-width: 768px) {
+  section {
+    padding: 64px 16px;
+  }
+
+  .hero-content {
+    padding: 56px 16px;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+  }
+
+  .card {
+    padding: 26px;
+  }
+}
+/* 5) Premium link underline animation */
+a {
+  color: inherit;
+}
+
+a.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+a.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 220ms ease;
+  background: currentColor;
+  opacity: 0.7;
+}
+
+a.link-underline:hover::after {
+  transform: scaleX(1);
+}
+body {
+  background-color: #f7f7f9;
+  background-image: radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
